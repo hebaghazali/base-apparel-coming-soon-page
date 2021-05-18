@@ -1,0 +1,22 @@
+{
+  "name": "base-apparel-coming-soon-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass scss/main.scss css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebaghazali/base-apparel-coming-soon-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hebaghazali/base-apparel-coming-soon-page/issues"
+  },
+  "homepage": "https://github.com/hebaghazali/base-apparel-coming-soon-page#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

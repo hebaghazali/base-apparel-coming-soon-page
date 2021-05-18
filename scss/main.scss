@@ -1,0 +1,103 @@
+@import "variables";
+@import "base";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  .coming-soon-body {
+    width: 100%;
+    background-image: url("../images/bg-pattern-desktop-1.svg"),
+      url("../images/bg-pattern-desktop-2.svg");
+    background-position: top left, right bottom;
+    background-repeat: no-repeat;
+    padding-top: 9.36375vh;
+    padding-left: 11.4583%;
+
+    &__content {
+      padding-top: 17.01125vh;
+      max-width: 30.902vw;
+
+      .heading {
+        text-transform: uppercase;
+
+        &--main {
+          display: block;
+          font-weight: 300;
+          font-size: 4rem;
+          line-height: 100%;
+          letter-spacing: 1.0825rem;
+          color: $color-secondary;
+        }
+
+        &--sub {
+          font-weight: 600;
+          font-size: 4rem;
+          line-height: 111%;
+          letter-spacing: 1.0825rem;
+          color: $color-dark;
+        }
+      }
+
+      .paragraph {
+        padding-top: 4vh;
+        font-size: 1rem;
+        line-height: 175%;
+        color: $color-secondary;
+      }
+
+      .form {
+        position: relative;
+        margin-top: 5%;
+
+        input[type='text'] {
+          width: 445px;
+          height: 56px;
+          border: 1px solid $color-secondary;
+          border-radius: 1.75rem;
+          outline: none;
+          padding-left: 2rem;
+          color: $color-dark;
+          font-size: 1rem;
+          line-height: 1.75rem;
+        }
+
+        ::-webkit-input-placeholder {
+          color: $color-secondary;
+          opacity: 0.5;
+        }
+
+        :-ms-input-placeholder {
+          color: $color-secondary;
+          opacity: 0.5;
+        }
+
+        ::placeholder {
+          color: $color-secondary;
+          opacity: 0.5;
+        }
+
+        input[type='submit'] {
+          position: absolute;
+          right: 0;
+          width: 100px;
+          height: 56px;
+          background: linear-gradient(135deg, $color-primary 0%, $color-primary-darker 100%);
+          box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+          border-radius: 28px;
+          border: 0;
+          cursor: pointer;
+        }
+
+        img {
+          cursor: pointer;
+          position: absolute;
+          right: 41.16px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
